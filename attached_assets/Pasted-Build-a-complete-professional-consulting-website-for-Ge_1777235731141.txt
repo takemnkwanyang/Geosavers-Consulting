@@ -1,0 +1,116 @@
+Build a complete professional consulting website for Geosavers International.
+
+This is a field-based geoscience, environmental, water, quarry, mining, and regulatory consulting company serving Cameroon and Africa.
+
+Do not include AI, automation, AI decision-making, or AI training services.
+
+The website should look like a serious environmental, engineering, geoscience, water, and regulatory consulting firm.
+
+Use a clean corporate design with earth colors:
+dark green, navy blue, sand, white, and light brown.
+
+Create a fully responsive website with the following pages:
+Home
+About
+Services
+Projects / Experience
+Industries
+Contact
+
+Homepage hero:
+Headline:
+Technical Consulting for Natural Resources, Water, Environment, and Regulatory Compliance
+
+Subheadline:
+We support quarry permits, groundwater exploration, environmental studies, geological projects, and technical documentation through field-based expertise and professional advisory support.
+
+Buttons:
+Request Consultation
+View Services
+
+Services:
+1. Quarry Permit Support
+- Quarry permit search
+- Documentation preparation
+- Permit acquisition support
+- Regulatory follow-up
+
+2. Groundwater and Hydrogeology
+- Groundwater exploration
+- Borehole siting
+- Hydrogeological studies
+- Water resource assessment
+
+3. Environmental Studies
+- Environmental Impact Assessment support
+- Environmental baseline studies
+- Environmental compliance advisory
+- Site suitability assessment
+
+4. Geological and Geophysical Services
+- Geological mapping
+- Geophysical surveys
+- Quarry and mining site evaluation
+- Field data collection
+
+5. GIS and Spatial Analysis
+- GIS mapping
+- Land-use mapping
+- Resource mapping
+- Project location analysis
+
+6. Petroleum and Energy Geoscience Advisory
+- Basin analysis
+- Reservoir characterization advisory
+- Subsurface interpretation support
+- Technical review of petroleum geoscience projects
+
+7. Technical Documentation
+- Feasibility reports
+- Regulatory documentation
+- Technical reports
+- Project proposal support
+
+Who we serve:
+Government agencies
+Construction companies
+Quarry operators
+Mining companies
+NGOs
+Development partners
+Private investors
+Landowners
+Water supply projects
+Infrastructure developers
+
+Add a process section:
+1. Consultation
+2. Site visit
+3. Field data collection
+4. Technical analysis
+5. Report preparation
+6. Submission and client support
+
+Add project examples:
+- Quarry permit documentation support
+- Groundwater exploration and borehole siting
+- Environmental baseline study
+- Geological and geophysical site assessment
+- GIS mapping and site suitability analysis
+
+Add a contact form with:
+Name
+Email
+Phone
+Service needed
+Message
+
+Add WhatsApp contact button.
+
+Make the website mobile responsive.
+
+Use professional placeholder images related to:
+geology, fieldwork, quarry sites, boreholes, maps, environmental studies, water exploration, and consulting.
+
+Tone:
+professional, clear, human, trustworthy, and not exaggerated.
