@@ -75,15 +75,15 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 text-accent shrink-0 mt-0.5" />
-                <span className="text-[13px] text-secondary-foreground/65">Yaoundé, Cameroon</span>
+                <span className="text-[13px] text-secondary-foreground/65">Bamenda, Cameroon</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-accent shrink-0" />
-                <span className="text-[13px] text-secondary-foreground/65">+237 6XX XXX XXX</span>
+                <span className="text-[13px] text-secondary-foreground/65">+237 675 334 971</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent shrink-0" />
-                <span className="text-[13px] text-secondary-foreground/65">contact@geosavers.com</span>
+                <span className="text-[13px] text-secondary-foreground/65">geosavers2014@gmail.com</span>
               </li>
             </ul>
           </div>

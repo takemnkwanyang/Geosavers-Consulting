@@ -60,7 +60,7 @@ export function Navbar() {
 
               <div className="hidden lg:flex items-center gap-1.5 text-sm text-muted-foreground">
                 <Phone className="h-3.5 w-3.5" />
-                <span className="text-[13px]">+237 6XX XXX XXX</span>
+                <span className="text-[13px]">+237 675 334 971</span>
               </div>
 
               <Link
@@ -74,7 +74,7 @@ export function Navbar() {
             {/* Mobile: phone icon + hamburger */}
             <div className="md:hidden flex items-center gap-1">
               <a
-                href="tel:+237600000000"
+                href="tel:+237675334971"
                 className="flex items-center justify-center w-10 h-10 text-foreground"
                 aria-label="Call us"
               >
@@ -157,7 +157,7 @@ export function Navbar() {
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <a
-                href="https://wa.me/237600000000"
+                href="https://wa.me/237675334971"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full border border-border text-sm font-semibold text-foreground transition-colors hover:bg-muted"
@@ -171,8 +171,8 @@ export function Navbar() {
 
               <div className="flex items-center gap-2 pt-2 justify-center">
                 <Phone className="w-3.5 h-3.5 text-muted-foreground" />
-                <a href="tel:+237600000000" className="text-sm text-muted-foreground font-medium">
-                  +237 6XX XXX XXX
+                <a href="tel:+237675334971" className="text-sm text-muted-foreground font-medium">
+                  +237 675 334 971
                 </a>
               </div>
             </div>

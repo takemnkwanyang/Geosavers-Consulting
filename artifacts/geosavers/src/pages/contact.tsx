@@ -67,7 +67,7 @@ export default function Contact() {
               </div>
             </div>
             <a
-              href="https://wa.me/237600000000"
+              href="https://wa.me/237675334971"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1eb854] transition-colors text-white text-sm font-semibold px-5 w-full sm:w-auto"
@@ -97,27 +97,27 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-[13px] font-semibold text-foreground mb-1">Location</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">Yaoundé, Cameroon<br />Operating across Africa</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">Bamenda, Cameroon<br />Operating across Africa</p>
                   </div>
                 </div>
 
-                <a href="tel:+237600000000" className="flex items-start gap-4 p-5 hover:bg-muted transition-colors group">
+                <a href="tel:+237675334971" className="flex items-start gap-4 p-5 hover:bg-muted transition-colors group">
                   <div className="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
                     <h3 className="text-[13px] font-semibold text-foreground mb-1">Phone</h3>
-                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">+237 6XX XXX XXX</p>
+                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">+237 675 334 971</p>
                   </div>
                 </a>
 
-                <a href="mailto:contact@geosavers.com" className="flex items-start gap-4 p-5 hover:bg-muted transition-colors group">
+                <a href="mailto:geosavers2014@gmail.com" className="flex items-start gap-4 p-5 hover:bg-muted transition-colors group">
                   <div className="w-10 h-10 bg-primary/10 text-primary flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white transition-colors">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
                     <h3 className="text-[13px] font-semibold text-foreground mb-1">Email</h3>
-                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">contact@geosavers.com</p>
+                    <p className="text-sm text-muted-foreground group-hover:text-primary transition-colors">geosavers2014@gmail.com</p>
                   </div>
                 </a>
               </div>
