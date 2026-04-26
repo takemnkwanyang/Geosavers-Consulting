@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/layout";
 import { MapPin, FileCheck, Search, Sprout, BarChart, HardHat, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { useSeo } from "@/lib/useSeo";
 
 const projects = [
   {
@@ -41,6 +42,13 @@ const projects = [
 ];
 
 export default function Projects() {
+  useSeo({
+    title: "Project Portfolio — Field Consulting Experience | Geosavers International",
+    description:
+      "Selected field engagements by Geosavers International: quarry permit documentation, groundwater borehole siting, environmental baseline studies, geological mapping, and GIS analysis across Cameroon.",
+    canonicalPath: "/projects",
+  });
+
   return (
     <Layout>
       {/* Page Header */}

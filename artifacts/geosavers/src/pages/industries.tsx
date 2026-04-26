@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/layout";
 import { Landmark, Building2, Pickaxe, Gem, HeartHandshake, Globe2, Briefcase, Map, Droplets, HardHat, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
+import { useSeo } from "@/lib/useSeo";
 
 const industriesList = [
   {
@@ -56,6 +57,13 @@ const industriesList = [
 ];
 
 export default function Industries() {
+  useSeo({
+    title: "Industries We Serve — Mining, Construction, Water & NGOs | Geosavers International",
+    description:
+      "We serve quarry operators, construction companies, mining firms, government agencies, NGOs, development partners, and private investors across Cameroon and Africa.",
+    canonicalPath: "/industries",
+  });
+
   return (
     <Layout>
       {/* Page Header */}

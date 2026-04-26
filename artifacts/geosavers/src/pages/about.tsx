@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/layout";
 import { Target, Shield, Compass, Users } from "lucide-react";
+import { useSeo } from "@/lib/useSeo";
 
 const values = [
   {
@@ -25,6 +26,13 @@ const values = [
 ];
 
 export default function About() {
+  useSeo({
+    title: "About Us — Field-Based Geoscience Consultants | Geosavers International",
+    description:
+      "Geosavers International is a field-based geoscience and environmental consulting firm serving Cameroon and Africa. Learn about our team, methodology, and core values.",
+    canonicalPath: "/about",
+  });
+
   return (
     <Layout>
       {/* Page Header */}

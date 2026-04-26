@@ -1,8 +1,16 @@
 import { useState } from "react";
 import { Layout } from "@/components/layout/layout";
 import { Mail, MapPin, Phone, CheckCircle2 } from "lucide-react";
+import { useSeo } from "@/lib/useSeo";
 
 export default function Contact() {
+  useSeo({
+    title: "Contact Us — Request a Technical Consultation | Geosavers International",
+    description:
+      "Get in touch with Geosavers International for quarry permit support, groundwater exploration, environmental studies, and geological consulting. Contact us by email, phone, or WhatsApp.",
+    canonicalPath: "/contact",
+  });
+
   const defaultService = typeof window !== "undefined"
     ? new URLSearchParams(window.location.search).get("service") || ""
     : "";

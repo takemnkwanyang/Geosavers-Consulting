@@ -5,6 +5,7 @@ import {
   ClipboardList, Drill, TreePine, ScanLine, ScrollText
 } from "lucide-react";
 import { Layout } from "@/components/layout/layout";
+import { useSeo } from "@/lib/useSeo";
 
 const heroTags = [
   { icon: ClipboardList, label: "Quarry Permits" },
@@ -81,6 +82,13 @@ const projects = [
 ];
 
 export default function Home() {
+  useSeo({
+    title: "Quarry Permits, Groundwater & Environmental Consulting — Cameroon | Geosavers International",
+    description:
+      "Field-based geoscience and environmental consulting for quarry permits, groundwater exploration, environmental studies, geological surveys, and regulatory documentation across Cameroon and Africa.",
+    canonicalPath: "/",
+  });
+
   return (
     <Layout>
       {/* ── Hero ────────────────────────────────────────────────────── */}
