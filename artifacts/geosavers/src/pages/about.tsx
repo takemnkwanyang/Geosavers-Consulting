@@ -91,17 +91,17 @@ export default function About() {
             <div className="space-y-6">
               <div className="relative h-72 overflow-hidden bg-muted border border-border">
                 <img
-                  src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?q=80&w=2070&auto=format&fit=crop"
-                  alt="Technical field work"
+                  src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop"
+                  alt="Rocky geological terrain — field survey environment"
                   className="w-full h-full object-cover grayscale-[20%]"
                 />
                 <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
               </div>
               <div className="relative h-44 overflow-hidden bg-muted border border-border">
                 <img
-                  src="https://images.unsplash.com/photo-1604537466573-5e94508fd243?q=80&w=2069&auto=format&fit=crop"
-                  alt="Geological mapping"
-                  className="w-full h-full object-cover grayscale-[20%] object-top"
+                  src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2069&auto=format&fit=crop"
+                  alt="Field geologist on rocky terrain"
+                  className="w-full h-full object-cover grayscale-[20%]"
                 />
                 <div className="absolute inset-0 bg-secondary/30 mix-blend-multiply" />
               </div>
