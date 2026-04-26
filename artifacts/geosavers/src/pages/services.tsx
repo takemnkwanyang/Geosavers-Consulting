@@ -1,5 +1,5 @@
 import { Layout } from "@/components/layout/layout";
-import { FileText, Droplets, Leaf, Mountain, Navigation, Zap, BookOpen } from "lucide-react";
+import { FileText, Droplets, Leaf, Mountain, Navigation, Zap, BookOpen, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 const servicesList = [
@@ -12,8 +12,8 @@ const servicesList = [
       "Quarry permit search",
       "Documentation preparation",
       "Permit acquisition support",
-      "Regulatory follow-up"
-    ]
+      "Regulatory follow-up",
+    ],
   },
   {
     id: "groundwater",
@@ -24,8 +24,8 @@ const servicesList = [
       "Groundwater exploration",
       "Borehole siting",
       "Hydrogeological studies",
-      "Water resource assessment"
-    ]
+      "Water resource assessment",
+    ],
   },
   {
     id: "environment",
@@ -36,8 +36,8 @@ const servicesList = [
       "Environmental Impact Assessment support",
       "Environmental baseline studies",
       "Environmental compliance advisory",
-      "Site suitability assessment"
-    ]
+      "Site suitability assessment",
+    ],
   },
   {
     id: "geology",
@@ -48,8 +48,8 @@ const servicesList = [
       "Geological mapping",
       "Geophysical surveys",
       "Quarry and mining site evaluation",
-      "Field data collection"
-    ]
+      "Field data collection",
+    ],
   },
   {
     id: "gis",
@@ -60,8 +60,8 @@ const servicesList = [
       "GIS mapping",
       "Land-use mapping",
       "Resource mapping",
-      "Project location analysis"
-    ]
+      "Project location analysis",
+    ],
   },
   {
     id: "energy",
@@ -72,8 +72,8 @@ const servicesList = [
       "Basin analysis",
       "Reservoir characterization advisory",
       "Subsurface interpretation support",
-      "Technical review of petroleum projects"
-    ]
+      "Technical review of petroleum projects",
+    ],
   },
   {
     id: "documentation",
@@ -84,48 +84,57 @@ const servicesList = [
       "Feasibility reports",
       "Regulatory documentation",
       "Technical reports",
-      "Project proposal support"
-    ]
-  }
+      "Project proposal support",
+    ],
+  },
 ];
 
 export default function Services() {
   return (
     <Layout>
-      <section className="bg-secondary py-20 border-b border-white/10">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">Technical Services</h1>
-          <p className="text-lg md:text-xl text-secondary-foreground/80 max-w-3xl">
-            We provide specialized consulting across seven core disciplines, combining rigorous field data collection with comprehensive analytical reporting.
+      {/* Page Header */}
+      <section className="bg-secondary py-20 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.06]">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff18_1px,transparent_1px),linear-gradient(to_bottom,#ffffff18_1px,transparent_1px)] bg-[size:40px_40px]" />
+        </div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-5xl">
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-6 h-[2px] bg-accent" />
+            <span className="text-accent text-[11px] uppercase tracking-[0.2em] font-semibold">Capabilities</span>
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight">Technical Services</h1>
+          <p className="text-white/65 max-w-2xl leading-relaxed text-base">
+            Specialized consulting across seven core disciplines, combining rigorous field data collection with comprehensive analytical reporting.
           </p>
         </div>
       </section>
 
+      {/* Services Grid */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-border border border-border">
             {servicesList.map((service) => (
-              <div key={service.id} className="flex flex-col bg-card rounded-xl border border-border overflow-hidden hover:shadow-md transition-shadow">
-                <div className="p-8 flex-1">
-                  <div className="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-6">
-                    <service.icon className="w-7 h-7" />
+              <div key={service.id} className="flex flex-col bg-background p-8 group hover:bg-muted transition-colors">
+                <div className="flex-1">
+                  <div className="w-11 h-11 bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                    <service.icon className="w-5 h-5" />
                   </div>
-                  <h2 className="text-2xl font-bold text-foreground mb-3">{service.title}</h2>
-                  <p className="text-muted-foreground mb-6 line-clamp-3">
+                  <h2 className="text-lg font-bold text-foreground mb-2 tracking-tight">{service.title}</h2>
+                  <p className="text-sm text-muted-foreground mb-5 leading-relaxed">
                     {service.description}
                   </p>
-                  <ul className="space-y-2 mt-auto">
+                  <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start text-sm text-foreground/80">
-                        <div className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 mr-2.5 shrink-0" />
+                      <li key={idx} className="flex items-start text-[13px] text-foreground/75">
+                        <div className="w-1 h-1 rounded-full bg-accent mt-1.5 mr-2.5 shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
-                <div className="p-6 bg-muted/50 border-t border-border mt-auto">
-                  <Link href={`/contact?service=${service.id}`} className="text-primary font-semibold hover:text-primary/80 inline-flex items-center text-sm">
-                    Inquire about this service <span className="ml-1">→</span>
+                <div className="mt-7 pt-5 border-t border-border">
+                  <Link href={`/contact?service=${service.id}`} className="inline-flex items-center text-xs text-primary font-semibold hover:text-primary/80 uppercase tracking-wide">
+                    Inquire <ArrowRight className="ml-1.5 w-3.5 h-3.5" />
                   </Link>
                 </div>
               </div>
@@ -134,15 +143,24 @@ export default function Services() {
         </div>
       </section>
 
-      <section className="py-24 bg-primary text-primary-foreground text-center">
-        <div className="container mx-auto px-4 max-w-3xl">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Need a custom technical solution?</h2>
-          <p className="text-primary-foreground/80 text-lg mb-8">
-            Our team is equipped to handle complex, multi-disciplinary projects that require expertise across several of our service areas.
-          </p>
-          <Link href="/contact" className="inline-flex h-12 items-center justify-center rounded-md bg-accent px-8 text-base font-semibold text-secondary transition-colors hover:bg-accent/90">
-            Discuss Your Project
-          </Link>
+      {/* CTA */}
+      <section className="py-20 bg-muted border-t border-border">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="flex flex-col md:flex-row items-start md:items-center gap-8 justify-between">
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-6 h-[2px] bg-accent" />
+                <span className="text-accent text-[11px] uppercase tracking-[0.2em] font-semibold">Get Started</span>
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2 tracking-tight">Need a custom technical solution?</h2>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Our team handles complex, multi-disciplinary projects that require expertise across several service areas.
+              </p>
+            </div>
+            <Link href="/contact" className="inline-flex h-11 items-center justify-center bg-primary px-8 text-sm font-semibold text-white tracking-wide transition-colors hover:bg-primary/90 shrink-0">
+              Discuss Your Project
+            </Link>
+          </div>
         </div>
       </section>
     </Layout>
