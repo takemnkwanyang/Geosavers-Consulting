@@ -27,9 +27,9 @@ const values = [
 
 export default function About() {
   useSeo({
-    title: "About Us — Field-Based Geoscience Consultants | Geosavers International",
+    title: "About Us — Field-Based Geoscience Consultants | GeoSavers",
     description:
-      "Geosavers International is a field-based geoscience and environmental consulting firm serving Cameroon and Africa. Learn about our team, methodology, and core values.",
+      "GeoSavers is a field-based geoscience and environmental consulting firm serving Cameroon and Africa. Learn about our team, methodology, and core values.",
     canonicalPath: "/about",
   });
 
@@ -46,7 +46,7 @@ export default function About() {
             <span className="text-accent text-[11px] uppercase tracking-[0.2em] font-semibold">Our Firm</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-5 tracking-tight max-w-2xl">
-            About Geosavers International
+            About GeoSavers
           </h1>
           <p className="text-white/65 max-w-2xl leading-relaxed text-base">
             A specialized consulting firm delivering rigorous, field-based technical solutions for natural resources, water, and environmental compliance across Cameroon and Africa.
@@ -66,7 +66,7 @@ export default function About() {
               <h2 className="text-3xl font-bold text-foreground mb-6 tracking-tight">Built on Field Experience</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed text-[15px]">
                 <p>
-                  Geosavers International operates at the intersection of technical geoscience and practical field execution. We are the firm that government agencies, mining companies, and infrastructure developers trust when they need accurate data from difficult terrain.
+                  GeoSavers operates at the intersection of technical geoscience and practical field execution. We are the firm that government agencies, mining companies, and infrastructure developers trust when they need accurate data from difficult terrain.
                 </p>
                 <p>
                   We do not rely on generic desktop analysis. Our expertise is built on physical fieldwork, precise data collection, and a deep understanding of local regulatory landscapes in Cameroon and across Africa.

@@ -17,7 +17,7 @@ function upsertMeta(selector: string, attr: string, value: string) {
 
 export function useSeo({ title, description, canonicalPath }: SeoOptions) {
   useEffect(() => {
-    const SITE = "Geosavers International";
+    const SITE = "GeoSavers";
     const fullTitle = title.includes(SITE) ? title : `${title} | ${SITE}`;
 
     document.title = fullTitle;

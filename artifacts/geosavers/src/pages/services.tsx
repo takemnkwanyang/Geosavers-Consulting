@@ -256,7 +256,7 @@ const categories = [
 
 export default function Services() {
   useSeo({
-    title: "Technical Services — Quarry, Groundwater, Environment & Geology | Geosavers International",
+    title: "Technical Services — Quarry, Groundwater, Environment & Geology | GeoSavers",
     description:
       "Explore our consulting services: quarry permit support, groundwater hydrogeology, environmental impact assessment, geological surveys, GIS spatial analysis, and regulatory documentation in Cameroon.",
     canonicalPath: "/services",

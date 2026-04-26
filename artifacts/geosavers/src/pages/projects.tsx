@@ -43,9 +43,9 @@ const projects = [
 
 export default function Projects() {
   useSeo({
-    title: "Project Portfolio — Field Consulting Experience | Geosavers International",
+    title: "Project Portfolio — Field Consulting Experience | GeoSavers",
     description:
-      "Selected field engagements by Geosavers International: quarry permit documentation, groundwater borehole siting, environmental baseline studies, geological mapping, and GIS analysis across Cameroon.",
+      "Selected field engagements by GeoSavers: quarry permit documentation, groundwater borehole siting, environmental baseline studies, geological mapping, and GIS analysis across Cameroon.",
     canonicalPath: "/projects",
   });
 

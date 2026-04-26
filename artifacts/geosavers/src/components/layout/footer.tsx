@@ -15,10 +15,10 @@ export function Footer() {
           <div className="space-y-5">
             <Link href="/" className="flex items-center gap-3 group w-fit">
               <div className="bg-primary text-white px-2.5 py-1.5">
-                <span className="font-bold text-base leading-none tracking-widest">GSI</span>
+                <span className="font-bold text-base leading-none tracking-widest">GS</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-bold text-[15px] tracking-tight">Geosavers International</span>
+                <span className="font-bold text-[15px] tracking-tight">GeoSavers</span>
                 <span className="text-[10px] text-secondary-foreground/50 uppercase tracking-[0.18em] font-medium mt-0.5">
                   Technical Consulting
                 </span>
@@ -91,7 +91,7 @@ export function Footer() {
 
         <div className="mt-14 pt-7 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[12px] text-secondary-foreground/40 text-center md:text-left">
-            © {currentYear} Geosavers International. All rights reserved.
+            © {currentYear} GeoSavers. All rights reserved.
           </p>
           <p className="text-[12px] text-secondary-foreground/40">
             Geoscience · Environment · Water · Regulatory Compliance

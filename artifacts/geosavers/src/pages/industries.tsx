@@ -58,7 +58,7 @@ const industriesList = [
 
 export default function Industries() {
   useSeo({
-    title: "Industries We Serve — Mining, Construction, Water & NGOs | Geosavers International",
+    title: "Industries We Serve — Mining, Construction, Water & NGOs | GeoSavers",
     description:
       "We serve quarry operators, construction companies, mining firms, government agencies, NGOs, development partners, and private investors across Cameroon and Africa.",
     canonicalPath: "/industries",

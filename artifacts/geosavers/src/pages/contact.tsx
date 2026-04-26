@@ -5,9 +5,9 @@ import { useSeo } from "@/lib/useSeo";
 
 export default function Contact() {
   useSeo({
-    title: "Contact Us — Request a Technical Consultation | Geosavers International",
+    title: "Contact Us — Request a Technical Consultation | GeoSavers",
     description:
-      "Get in touch with Geosavers International for quarry permit support, groundwater exploration, environmental studies, and geological consulting. Contact us by email, phone, or WhatsApp.",
+      "Get in touch with GeoSavers for quarry permit support, groundwater exploration, environmental studies, and geological consulting. Contact us by email, phone, or WhatsApp.",
     canonicalPath: "/contact",
   });
 

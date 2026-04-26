@@ -29,10 +29,10 @@ export function Navbar() {
             {/* Logo */}
             <Link href="/" onClick={close} className="flex items-center gap-3 group">
               <div className="bg-primary text-white px-2.5 py-1.5 flex items-center justify-center">
-                <span className="font-bold text-base leading-none tracking-widest">GSI</span>
+                <span className="font-bold text-base leading-none tracking-widest">GS</span>
               </div>
               <div className="flex flex-col leading-none">
-                <span className="font-bold text-[14px] sm:text-[15px] text-foreground tracking-tight">Geosavers International</span>
+                <span className="font-bold text-[14px] sm:text-[15px] text-foreground tracking-tight">GeoSavers</span>
                 <span className="text-[10px] text-muted-foreground uppercase tracking-[0.18em] font-medium mt-0.5 hidden sm:block">
                   Technical Consulting
                 </span>
@@ -108,7 +108,7 @@ export function Navbar() {
             <div className="flex items-center justify-between px-5 h-[64px] border-b border-border">
               <div className="flex items-center gap-3">
                 <div className="bg-primary text-white px-2.5 py-1.5 flex items-center justify-center">
-                  <span className="font-bold text-base leading-none tracking-widest">GSI</span>
+                  <span className="font-bold text-base leading-none tracking-widest">GS</span>
                 </div>
                 <span className="font-bold text-[14px] text-foreground">Menu</span>
               </div>

@@ -83,7 +83,7 @@ const projects = [
 
 export default function Home() {
   useSeo({
-    title: "Quarry Permits, Groundwater & Environmental Consulting — Cameroon | Geosavers International",
+    title: "Quarry Permits, Groundwater & Environmental Consulting — Cameroon | GeoSavers",
     description:
       "Field-based geoscience and environmental consulting for quarry permits, groundwater exploration, environmental studies, geological surveys, and regulatory documentation across Cameroon and Africa.",
     canonicalPath: "/",
@@ -117,7 +117,7 @@ export default function Home() {
             </h1>
 
             <p className="text-[15px] text-white/65 mb-8 max-w-2xl leading-relaxed">
-              Geosavers International delivers technical consulting grounded in real field data — not desktop estimates. We work with quarry operators, infrastructure developers, government agencies, and mining companies across Cameroon and Africa.
+              GeoSavers delivers technical consulting grounded in real field data — not desktop estimates. We work with quarry operators, infrastructure developers, government agencies, and mining companies across Cameroon and Africa.
             </p>
 
             {/* Service chips — immediately scannable */}
