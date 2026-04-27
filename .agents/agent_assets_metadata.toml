@@ -18,3 +18,21 @@ id = "LEaTFnRhD5vwE0XR2lSCB"
 uri = "file://attached_assets/image_search/geo_field_3.jpg"
 type = "image"
 title = "Option 3 — Resistivity fieldwork crew"
+
+[[outputs]]
+id = "f4aKiU1wT2ZQl5Ad2J3ka"
+uri = "file://attached_assets/image_search/people_1.jpg"
+type = "image"
+title = "Option 1 — USGS + Botswana Geoscience field team in Africa"
+
+[[outputs]]
+id = "53VRjFeZyC0VlwqCNFiCg"
+uri = "file://attached_assets/image_search/people_2.webp"
+type = "image"
+title = "Option 2 — Field crew in safety gear, geophysical survey"
+
+[[outputs]]
+id = "oFB7B1IZS3SCbFrEptp2v"
+uri = "file://attached_assets/image_search/people_3.jpg"
+type = "image"
+title = "Option 3 — Black engineer at survey/construction site"
