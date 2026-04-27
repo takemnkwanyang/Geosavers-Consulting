@@ -30,7 +30,7 @@ const team = [
       },
       {
         icon: Briefcase,
-        text: "Engineer No. I, Director of Industry — Ministry of Mines, Industry & Technological Development, Yaoundé, Cameroon",
+        text: "Engineer No. I, Directorate of Industry — Ministry of Mines, Industry & Technological Development, Yaoundé, Cameroon",
       },
     ],
   },

@@ -61,7 +61,7 @@ export function Navbar() {
 
               <div className="hidden lg:flex items-center gap-1.5 text-sm text-muted-foreground">
                 <Phone className="h-3.5 w-3.5" />
-                <span className="text-[13px]">+237 675 334 971</span>
+                <span className="text-[13px] whitespace-nowrap">+237 675 334 971</span>
               </div>
 
               <Link
