@@ -99,8 +99,8 @@ export default function About() {
               </div>
               <div className="relative h-44 overflow-hidden bg-muted border border-border">
                 <img
-                  src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2069&auto=format&fit=crop"
-                  alt="Field geologist on rocky terrain"
+                  src="/images/geo-field-1.webp"
+                  alt="Field geologists conducting electrical resistivity survey"
                   className="w-full h-full object-cover grayscale-[20%]"
                 />
                 <div className="absolute inset-0 bg-secondary/30 mix-blend-multiply" />

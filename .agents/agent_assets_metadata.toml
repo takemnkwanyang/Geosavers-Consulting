@@ -1,0 +1,20 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "giSOUlmQB_BYQr5Jwbmge"
+uri = "file://attached_assets/image_search/geo_field_1.webp"
+type = "image"
+title = "Option 1 — Electrical Resistivity Survey in field"
+
+[[outputs]]
+id = "mru3b6NoXAanQBM96QxOI"
+uri = "file://attached_assets/image_search/geo_field_2.jpg"
+type = "image"
+title = "Option 2 — Electrode spread resistivity field layout"
+
+[[outputs]]
+id = "LEaTFnRhD5vwE0XR2lSCB"
+uri = "file://attached_assets/image_search/geo_field_3.jpg"
+type = "image"
+title = "Option 3 — Resistivity fieldwork crew"
