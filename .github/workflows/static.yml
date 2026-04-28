@@ -36,10 +36,14 @@ jobs:
           cache: 'pnpm'
       
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile false
       
       - name: Build Vite app
-        run: pnpm run build
+        env:
+          PORT: 5173
+          BASE_PATH: /Geosavers-Consulting/
+          NODE_ENV: production
+        run: cd artifacts/geosavers && pnpm run build
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -47,7 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'artifacts/geosavers/dist'
+          path: 'artifacts/geosavers/dist/public'
       
       - name: Deploy to GitHub Pages
         id: deployment
