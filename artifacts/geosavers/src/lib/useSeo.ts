@@ -40,6 +40,8 @@ export function useSeo({ title, description, canonicalPath }: SeoOptions) {
     upsertMeta('meta[name="twitter:description"]', "content", description);
     upsertMeta('meta[name="twitter:description"]', "name", "twitter:description");
 
+    const baseUrl = "https://geosaversconsulting.com";
+
     if (canonicalPath) {
       let link = document.querySelector<HTMLLinkElement>('link[rel="canonical"]');
       if (!link) {
@@ -47,7 +49,10 @@ export function useSeo({ title, description, canonicalPath }: SeoOptions) {
         link.rel = "canonical";
         document.head.appendChild(link);
       }
-      link.href = `https://geosavers.com${canonicalPath}`;
+      link.href = `${baseUrl}${canonicalPath}`;
+
+      upsertMeta('meta[property="og:url"]', "content", `${baseUrl}${canonicalPath}`);
+      upsertMeta('meta[property="og:url"]', "property", "og:url");
     }
   }, [title, description, canonicalPath]);
 }
