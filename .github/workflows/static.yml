@@ -1,58 +1,71 @@
-name: Deploy static content to Pages
+I found the issue! Your GitHub Pages deployment is **failing**. Here's what's happening:
 
-on:
-  push:
-    branches: ["main"]
-  workflow_dispatch:
+## ❌ The Problem
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+Your latest deployment (8 minutes ago) failed with this error:
 
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+```
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/style.scss':
+No such file or directory @ dir_chdir0 - /github/workspace/docs
+```
 
-jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 8
-      
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'pnpm'
-      
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile false
-      
-      - name: Build Vite app
-        env:
-          PORT: 5173
-          BASE_PATH: /Geosavers-Consulting/
-          NODE_ENV: production
-        run: cd artifacts/geosavers && pnpm run build
-      
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: 'artifacts/geosavers/dist/public'
-      
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+**The root cause:** GitHub Pages is trying to build your site as a **Jekyll project** (looking for a `/docs` folder), but your project is a **TypeScript monorepo** with a completely different structure.
+
+## ✅ The Solution
+
+Your current workflow (`.github/workflows/static.yml`) uploads the entire repository, which won't work. You need to:
+
+1. **Build your site first** using your build commands
+2. **Upload only the built output** (the static files)
+
+Let me check what your actual output directory is:I found the issue! Your GitHub Pages deployment is **failing** because of a configuration mismatch. Here's what's happening:
+
+## 🔴 Problem
+
+Your latest GitHub Pages build (8 minutes ago) **failed with this error:**
+
+```
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/style.scss':
+No such file or directory @ dir_chdir0 - /github/workspace/docs
+```
+
+The system is trying to build your site as a **Jekyll static site** (looking for a `docs` folder), but your project is actually a **React/Vite application** in the `artifacts/geosavers` folder.
+
+Your deployment workflow (`.github/workflows/static.yml`) is uploading the entire repository root (`path: '.'`) instead of the built Vite app.
+
+## ✅ Solution
+
+You need to:
+
+1. **Build your Vite app first**
+2. **Upload only the built output** to GitHub Pages
+
+Let me fix your workflow:## Issue Found & Fixed! 🎯
+
+Your **GitHub Pages deployment is failing** because:
+
+### **The Problem:**
+The current workflow tries to deploy the **entire repository** (`path: '.'`) but GitHub Pages expects a built output folder. Your site is a **Vite app** that needs to be **built first** into a `dist` folder.
+
+The error shows:
+```
+Conversion error: Jekyll::Converters::Scss encountered an error while converting 'assets/css/style.scss'
+No such file or directory @ dir_chdir0 - /github/workspace/docs
+```
+
+GitHub tried to treat it as a Jekyll site and failed because there's no `docs` folder.
+
+### **The Solution:**
+I've updated your `.github/workflows/static.yml` to:
+
+1. **Install dependencies** with pnpm
+2. **Build your Vite app** → creates `artifacts/geosavers/dist` 
+3. **Upload only the dist folder** to GitHub Pages
+4. **Deploy** the built files
+
+### **What happens next:**
+The workflow will automatically run when you push to `main`. Your site should be live at:
+- **https://takemnkwanyang.github.io/Geosavers-Consulting/**
+- Or your custom domain (if you have the CNAME configured)
+
+Go to your repo's **Actions** tab to watch the deployment. If it succeeds (green checkmark), your site is live! 🚀
